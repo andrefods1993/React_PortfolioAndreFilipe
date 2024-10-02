@@ -1,8 +1,10 @@
 import nodemailer from "nodemailer";
-import config from "config";
+import config from "../../config/default.js";
 
-const emailUser = config.get("email.user");
-const emailPass = config.get("email.pass");
+const emailUser = config.email.user;
+const emailPass = config.email.pass;
+
+console.log(emailUser, emailPass);
 
 const transporter = nodemailer.createTransport({
 	host: "smtp.gmail.com",

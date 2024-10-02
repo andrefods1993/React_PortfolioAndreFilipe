@@ -3,9 +3,9 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import emailRoutes from "./routes/emailRoutes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
-import config from "config";
+import config from "../config/default.js";
 
-const port = config.get("server.port");
+const port = config.port;
 
 const app = express();
 const PORT = port || 5000;

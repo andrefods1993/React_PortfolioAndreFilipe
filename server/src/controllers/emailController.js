@@ -1,7 +1,7 @@
 import transporter from "../config/nodemailer-config.js";
-import config from "config";
+import config from "../../config/default.js";
 
-const emailUser = config.get("email.user");
+const emailUser = config.email.user;
 
 export const sendEmail = async (req, res) => {
 	const { name, email, message } = req.body;
