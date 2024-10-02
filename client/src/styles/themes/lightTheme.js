@@ -1,0 +1,78 @@
+export const lightTheme = {
+	colors: {
+		primary: {
+			main: "#e4152e",
+			light: "#ff4146",
+			dark: "#ad0009",
+			contrastText: "#f1f1f1",
+		},
+		secondary: {
+			main: "#ffa900",
+			light: "#ffc53c",
+			dark: "#d07700",
+			contrastText: "#140d00",
+		},
+		background: {
+			default: "#f5f5f5",
+			paper: "#e5e5e5",
+			nav: "rgba(240,240,240, 0.6)",
+			skills: "linear-gradient(rgba(229,229,229,1), rgba(245,245,245,0.9))",
+			overlay: "rgb(173,0,9, 0.9)",
+			card: "#fcfcfc",
+			footer: "linear-gradient(rgba(12, 12, 12, 1), rgba(30, 30, 30, 0.85))",
+		},
+		text: {
+			primary: "#252525",
+			secondary: "#121212",
+		},
+		status: {
+			success: "#28a745",
+			info: "#17a2b8",
+			warning: "#ffc107",
+			error: "#dc3545",
+		},
+		gray: {
+			50: "hsl(220, 35%, 97%)",
+			100: "hsl(220, 30%, 94%)",
+			200: "hsl(220, 20%, 88%)",
+			300: "hsl(220, 20%, 80%)",
+			400: "hsl(220, 20%, 65%)",
+			500: "hsl(220, 20%, 42%)",
+			600: "hsl(220, 20%, 35%)",
+			700: "hsl(220, 20%, 25%)",
+			800: "hsl(220, 30%, 6%)",
+			900: "hsl(220, 35%, 3%)",
+		},
+	},
+	typography: {
+		fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+		baseFontSize: "1rem",
+		h1: "2rem",
+		h2: "1.5rem",
+		body: "0.875rem",
+		small: "0.625rem",
+	},
+	shadows: {
+		lightShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+		mediumShadow: "0 4px 8px rgba(0, 0, 0, 0.15)",
+		darkShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
+	},
+	borders: {
+		thin: "1px solid hsl(220, 20%, 80%)",
+		thick: "2px solid #BDBDBD",
+		borderRadius: "8px",
+	},
+	spacing: {
+		xs: "0.25rem",
+		sm: "0.5rem",
+		md: "1rem",
+		lg: "1.5rem",
+		xl: "2rem",
+	},
+	breakpoints: {
+		sm: "576px",
+		md: "768px",
+		lg: "992px",
+		xl: "1200px",
+	},
+};

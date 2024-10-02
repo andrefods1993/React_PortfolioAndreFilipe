@@ -1,0 +1,29 @@
+{
+	"name": "email-sender-api",
+	"version": "1.0.0",
+	"main": "src/index.js",
+	"type": "module",
+	"scripts": {
+		"start": "set NODE_ENV=production && node src/index.js",
+		"dev": "nodemon src/index.js",
+		"test": "echo \"No tests specified\" && exit 0"
+	},
+	"keywords": [
+		"nodemailer",
+		"express",
+		"api"
+	],
+	"author": "André F. Oliveira",
+	"license": "ISC",
+	"description": "API para enviar e-mails usando Nodemailer",
+	"dependencies": {
+		"body-parser": "^1.20.3",
+		"config": "^3.3.12",
+		"cors": "^2.8.5",
+		"express": "^4.21.0",
+		"nodemailer": "^6.9.15"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.7"
+	}
+}
