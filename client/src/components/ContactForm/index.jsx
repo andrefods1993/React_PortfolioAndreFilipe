@@ -14,7 +14,7 @@ const ContactForm = () => {
 	const onFinish = async (values) => {
 		try {
 			const response = await fetch(
-				"https://mailsenderapi-portfolioandrefilipe.onrender.com",
+				"https://mailsenderapi-portfolioandrefilipe.onrender.com/api/send",
 				{
 					method: "POST",
 					headers: {
