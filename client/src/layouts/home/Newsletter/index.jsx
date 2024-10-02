@@ -9,7 +9,7 @@ import {
 } from "./styles";
 
 const Newsletter = () => {
-	const [email, setEmail] = useState(""); // Estado para armazenar o e-mail
+	const [email, setEmail] = useState("");
 
 	const handleSubmit = async () => {
 		if (!email) {
@@ -17,25 +17,27 @@ const Newsletter = () => {
 			return;
 		}
 
-		// Criando um objeto com os dados a serem enviados
 		const emailData = {
-			name: "Newsletter", // Nome padrão ou você pode solicitar um input do usuário
+			name: "Newsletter",
 			email: email,
-			message: "Inscrição na newsletter", // Mensagem padrão
+			message: "Inscrição na newsletter",
 		};
 
 		try {
-			const response = await fetch("http://localhost:5000/api/send", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(emailData), // Enviando o objeto com nome, e-mail e mensagem
-			});
+			const response = await fetch(
+				"https://mailsenderapi-portfolioandrefilipe.onrender.com",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(emailData),
+				}
+			);
 
 			if (response.ok) {
 				message.success("Inscrição realizada com sucesso!");
-				setEmail(""); // Limpando o campo de e-mail após o envio
+				setEmail("");
 			} else {
 				message.error("Erro ao se inscrever. Tente novamente.");
 			}
@@ -53,8 +55,8 @@ const Newsletter = () => {
 					size="large"
 					placeholder="Digite seu e-mail"
 					prefix={<MailOutlined />}
-					value={email} // Atribuindo o valor do estado ao Input
-					onChange={(e) => setEmail(e.target.value)} // Atualizando o estado ao digitar
+					value={email}
+					onChange={(e) => setEmail(e.target.value)}
 					style={{
 						borderRadius: "8px",
 						maxWidth: "400px",
