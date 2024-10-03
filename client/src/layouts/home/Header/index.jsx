@@ -29,8 +29,8 @@ const HomeHeader = () => {
 					<div data-aos="fade-left">
 						<PhotoCard
 							image={PhotoImg}
-							projectsValue={50}
-							skillsValue={50}
+							projectsValue={"50+"}
+							skillsValue={"20+"}
 						/>
 					</div>
 				</ColImg>
