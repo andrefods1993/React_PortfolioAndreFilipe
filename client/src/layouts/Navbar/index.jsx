@@ -64,6 +64,9 @@ const Navbar = () => {
 				open={isDrawerOpen}
 			>
 				<DrawerMenu>
+					<ToggleButton onClick={toggleDrawer}>
+						{isDrawerOpen ? <CloseOutlined /> : <MenuOutlined />}
+					</ToggleButton>
 					{menu.map((item) => (
 						<DrawerItem
 							key={item.path}
